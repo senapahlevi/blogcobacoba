@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "postsworkis",
+  "info": {
+    "name": "Postsworki"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "time": {
+      "type": "datetime"
+    },
+    "imagemulti": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "uidtitle": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

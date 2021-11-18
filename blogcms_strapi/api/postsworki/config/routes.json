@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/postsworkis",
+      "handler": "postsworki.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postsworkis/count",
+      "handler": "postsworki.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postsworkis/:id",
+      "handler": "postsworki.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/postsworkis",
+      "handler": "postsworki.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/postsworkis/:id",
+      "handler": "postsworki.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/postsworkis/:id",
+      "handler": "postsworki.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
